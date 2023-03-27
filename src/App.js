@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "./components/Card";
 import Flex from "./components/Flex";
 import Title from "./components/Title";
 
@@ -15,8 +16,13 @@ background-color: silver;
 function App() {
   return (
     <AppWrapper>
-      <Flex justify="center">
+      <Flex align="center" direction="column">
         <Title color={"#3cff00"}>Привет, мир !!!</Title>
+        <Flex justify="flex-start">
+          <Card />
+          <Card />
+        </Flex>
+
       </Flex>
     </AppWrapper>
   );
