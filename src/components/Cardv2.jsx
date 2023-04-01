@@ -15,7 +15,7 @@ const StyledCard = styled.div`
 const Cardv2 = (...props) => {
     return (
         <StyledCard {...props}>
-            <Title>{props.text}</Title>
+            <Title />
         </StyledCard> 
     );
 };
