@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "./components/Flex";
 import Title from "./components/Title";
+import Cardv2 from "./components/Cardv2";
+
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -16,7 +18,17 @@ function App() {
   return (
     <AppWrapper>
       <Flex justify="center">
-        <Title color={"#3cff00"}>Привет, мир !!!</Title>
+        <Title color={"red"}>Привет, мир !!!</Title>
+      </Flex>
+      <Flex wrap="wrap">
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
+        <Cardv2>ddddddd</Cardv2>
       </Flex>
     </AppWrapper>
   );
